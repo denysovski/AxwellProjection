@@ -121,3 +121,13 @@ Individual pages for each studio location, sharing the same visual and motion sy
 | `styles.css` | Shared design and motion system |
 | `script.js` | Central interaction and animation controller |
 | `package.json` | npm dependency manifest (Lenis) |
+
+---
+
+## Issue Images
+
+![issue1](issue1.png)
+
+![issue2](issue2.png)
+
+![issue3](issue3.png)
