@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXWELLS Tokyo | Office Profile</title>
+    <meta name="description" content="AXWELLS Tokyo office profile, urban projects, studio news, and architecture FAQ." />
+    <link rel="stylesheet" href="node_modules/lenis/dist/lenis.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">AX / WELLS</a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="#showcase">Showcase</a>
+          <a href="#news">News</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+      <div class="menu-head">
+        <strong>Tokyo Navigation</strong>
+        <button class="button" data-close-menu>Close</button>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-layers">
+          <section class="layer-group">
+            <p class="layer-title">Layer 01: Studio</p>
+            <div class="layer-links">
+              <a href="index.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop" data-caption="Global Main Canvas">Global Home</a>
+              <a href="tokyo.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1600&auto=format&fit=crop" data-caption="Tokyo Office">Tokyo Office</a>
+              <a href="#showcase" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop" data-caption="Tokyo Built Works">Built Works</a>
+              <a href="#news" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=1600&auto=format&fit=crop" data-caption="Tokyo Dispatch">Dispatch</a>
+            </div>
+          </section>
+          <section class="layer-group">
+            <p class="layer-title">Layer 02: Local Programs</p>
+            <div class="layer-links">
+              <a href="#" class="menu-link" data-preview="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop" data-caption="Dense Urban Infill">Dense Urban Infill</a>
+              <a href="#" class="sub-link" data-preview="https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=1600&auto=format&fit=crop" data-caption="Transit Micro-Hubs">- Transit Micro-Hubs</a>
+              <a href="#" class="menu-link" data-preview="https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=1600&auto=format&fit=crop" data-caption="Retail Atmospheres">Retail Atmospheres</a>
+            </div>
+          </section>
+          <section class="layer-group">
+            <p class="layer-title">Layer 03: Offices</p>
+            <div class="layer-links">
+              <a href="berlin.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1600&auto=format&fit=crop" data-caption="Berlin Atelier">Berlin, DE</a>
+              <a href="copenhagen.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=1600&auto=format&fit=crop" data-caption="Copenhagen Atelier">Copenhagen, DK</a>
+              <a href="tokyo.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1600&auto=format&fit=crop" data-caption="Tokyo Atelier">Tokyo, JP</a>
+            </div>
+          </section>
+        </div>
+        <div class="menu-preview" aria-hidden="true">
+          <div class="preview-frame">
+            <img id="menuPreviewImage" src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1600&auto=format&fit=crop" alt="Preview" />
+          </div>
+          <p class="preview-caption" id="menuPreviewCaption">Tokyo Office</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero-stage">
+        <div class="container hero-sticky">
+          <article class="hero-panel">
+            <div class="hero-grid">
+              <div>
+                <p class="eyebrow" data-reveal>AXWELLS Office Profile | Tokyo, Japan</p>
+                <h1 class="hero-title" data-wave>Tokyo: High Density,<br /><span class="serif">Precise Calm</span></h1>
+                <p class="hero-copy" data-reveal>
+                  The Tokyo team works in high-speed urban contexts, shaping compact spaces through controlled geometry and layered light.
+                </p>
+                <div class="hero-actions" data-reveal>
+                  <a href="#showcase" class="button primary">Explore Projects</a>
+                  <a href="mailto:tokyo@axwells.studio" class="button">Contact Tokyo</a>
+                </div>
+              </div>
+              <figure class="hero-media" data-reveal>
+                <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1800&auto=format&fit=crop" alt="Tokyo architecture" />
+                <figcaption class="media-label">Tokyo Surface 01</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>Local Information</p>
+              <h2 class="section-title" data-wave>Tokyo Studio Snapshot</h2>
+            </div>
+          </div>
+          <div class="stats-grid">
+            <article class="metric" data-reveal><p class="metric-value">09</p><p class="metric-label">Current Sites</p></article>
+            <article class="metric" data-reveal><p class="metric-value">24</p><p class="metric-label">Architects & Researchers</p></article>
+            <article class="metric" data-reveal><p class="metric-value">13</p><p class="metric-label">Urban Infill Works</p></article>
+            <article class="metric" data-reveal><p class="metric-value">31%</p><p class="metric-label">Energy Demand Reduction</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="showcase">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>Showcase</p>
+              <h2 class="section-title" data-wave>Tokyo Built Works</h2>
+            </div>
+          </div>
+          <div class="cards-grid">
+            <article class="card" data-reveal>
+              <div class="card-media"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1400&auto=format&fit=crop" alt="Tokyo facade" /></div>
+              <div class="card-body"><h3>Shibuya Light Grid</h3><p>Retail-urban interface combining layered screens and controlled public glow.</p></div>
+            </article>
+            <article class="card" data-reveal>
+              <div class="card-media"><img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=1400&auto=format&fit=crop" alt="Tokyo street view" /></div>
+              <div class="card-body"><h3>Transit Pocket Commons</h3><p>Micro-public architecture integrated with commuter paths and rain shelter zones.</p></div>
+            </article>
+            <article class="card" data-reveal>
+              <div class="card-media"><img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=1400&auto=format&fit=crop" alt="Contemporary interior" /></div>
+              <div class="card-body"><h3>Aoyama Vertical Atelier</h3><p>Compact mixed-use tower with stacked studios and responsive facade apertures.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>News</p>
+              <h2 class="section-title" data-wave>Tokyo Dispatch</h2>
+            </div>
+          </div>
+          <div class="news-grid">
+            <article class="news-card" data-reveal>
+              <time datetime="2026-03-10">10 Mar 2026</time>
+              <h3>Transit Pocket Commons wins metropolitan prototype approval.</h3>
+              <p>Phase one construction starts with modular steel and carbon-aware concrete mixes.</p>
+            </article>
+            <article class="news-card" data-reveal>
+              <time datetime="2026-02-18">18 Feb 2026</time>
+              <h3>Tokyo team publishes study on facade porosity in high-density districts.</h3>
+              <p>The report links daylight access with pedestrian comfort and evening identity.</p>
+            </article>
+            <article class="news-card" data-reveal>
+              <time datetime="2026-01-12">12 Jan 2026</time>
+              <h3>Aoyama Vertical Atelier enters technical design review.</h3>
+              <p>Structural and envelope systems are coordinated for faster prefabricated assembly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>FAQ</p>
+              <h2 class="section-title" data-wave>Tokyo Office Questions</h2>
+            </div>
+          </div>
+          <div class="faq-wrap">
+            <article class="faq-item" data-reveal>
+              <button class="faq-question"><span>Can the Tokyo office handle compact-site projects?</span><span class="symbol">+</span></button>
+              <div class="faq-answer"><p>Yes. We are specialized in micro-footprint urban sites and complex multi-level circulation.</p></div>
+            </article>
+            <article class="faq-item" data-reveal>
+              <button class="faq-question"><span>Do you design retail and hospitality interiors?</span><span class="symbol">+</span></button>
+              <div class="faq-answer"><p>Yes. The Tokyo office leads expressive retail, hospitality, and mixed-use interior architecture programs.</p></div>
+            </article>
+            <article class="faq-item" data-reveal>
+              <button class="faq-question"><span>How does Tokyo coordinate with Europe offices?</span><span class="symbol">+</span></button>
+              <div class="faq-answer"><p>Through synchronized design sprints, shared digital models, and weekly global review loops.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner" data-reveal>
+            <h3 data-wave>Launching a high-density project in Tokyo?</h3>
+            <a href="mailto:tokyo@axwells.studio" class="button primary">Email Tokyo Team</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <section class="footer-block">
+            <h4>Offices</h4>
+            <ul>
+              <li><a href="berlin.html">Berlin, DE</a></li>
+              <li><a href="copenhagen.html">Copenhagen, DK</a></li>
+              <li><a href="tokyo.html">Tokyo, JP</a></li>
+            </ul>
+          </section>
+          <section class="footer-block">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Global Home</a></li>
+              <li><a href="#showcase">Showcase</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </section>
+          <section class="footer-block">
+            <h4>Tokyo Contact</h4>
+            <p>tokyo@axwells.studio</p>
+            <p>+81 3 62 84 40 19</p>
+            <p>Minato City, Tokyo 107-0062</p>
+          </section>
+          <section class="footer-block">
+            <h4>Follow</h4>
+            <div class="social-row">
+              <a class="social-chip" href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a class="social-chip" href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9V19" stroke="currentColor" stroke-width="1.7"/><circle cx="6.5" cy="6.5" r="1" fill="currentColor"/><path d="M11 19V12.5C11 10.84 12.34 9.5 14 9.5C15.66 9.5 17 10.84 17 12.5V19" stroke="currentColor" stroke-width="1.7"/></svg></a>
+              <a class="social-chip" href="#" aria-label="Behance"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 9.5H8.2C9.75 9.5 11 10.75 11 12.3C11 13.85 9.75 15.1 8.2 15.1H3V9.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M3 15.1H8.7C10.3 15.1 11.6 16.4 11.6 18C11.6 19.6 10.3 20.9 8.7 20.9H3V15.1Z" stroke="currentColor" stroke-width="1.7"/></svg></a>
+            </div>
+          </section>
+        </div>
+        <div class="footer-meta">
+          <span>AXWELLS Tokyo</span>
+          <span>Copyright <span data-year></span></span>
+          <span>Architecture Office</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/lenis/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

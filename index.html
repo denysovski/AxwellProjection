@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXWELLS | Abstract Architecture Studio</title>
+    <meta
+      name="description"
+      content="AXWELLS is an abstract architecture studio crafting expressive spaces in Berlin, Copenhagen, and Tokyo."
+    />
+    <link rel="stylesheet" href="node_modules/lenis/dist/lenis.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">AX / WELLS</a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="#showcase">Showcase</a>
+          <a href="#projects">New Projects</a>
+          <a href="#news">News</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+      <div class="menu-head">
+        <strong>Spatial Index</strong>
+        <button class="button" id="menuClose" data-close-menu>Close</button>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-layers">
+          <section class="layer-group">
+            <p class="layer-title">Layer 01: Core Routes</p>
+            <div class="layer-links">
+              <a href="index.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop" data-caption="Main Canvas">Main Canvas</a>
+              <a href="#showcase" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1600&auto=format&fit=crop" data-caption="Built Showcase">Built Showcase</a>
+              <a href="#projects" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1600&auto=format&fit=crop" data-caption="Incoming Projects">Incoming Projects</a>
+              <a href="#news" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1464082354059-27db6ce50048?q=80&w=1600&auto=format&fit=crop" data-caption="Studio Dispatch">Studio Dispatch</a>
+            </div>
+          </section>
+
+          <section class="layer-group">
+            <p class="layer-title">Layer 02: Programs</p>
+            <div class="layer-links">
+              <a href="#" class="menu-link" data-preview="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1600&auto=format&fit=crop" data-caption="Residential Futures">Residential Futures</a>
+              <a href="#" class="sub-link" data-preview="https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=1600&auto=format&fit=crop" data-caption="Cliff Habitats">- Cliff Habitats</a>
+              <a href="#" class="sub-link" data-preview="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" data-caption="Urban Retreats">- Urban Retreats</a>
+              <a href="#" class="menu-link" data-preview="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop" data-caption="Cultural Frameworks">Cultural Frameworks</a>
+              <a href="#" class="sub-link" data-preview="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1600&auto=format&fit=crop" data-caption="Archive Museums">- Archive Museums</a>
+              <a href="#" class="menu-link" data-preview="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=1600&auto=format&fit=crop" data-caption="Material Research">Material Research</a>
+            </div>
+          </section>
+
+          <section class="layer-group">
+            <p class="layer-title">Layer 03: Offices</p>
+            <div class="layer-links">
+              <a href="berlin.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1600&auto=format&fit=crop" data-caption="Berlin Atelier">Berlin, DE</a>
+              <a href="copenhagen.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?q=80&w=1600&auto=format&fit=crop" data-caption="Copenhagen Atelier">Copenhagen, DK</a>
+              <a href="tokyo.html" class="menu-link" data-close-menu data-preview="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=1600&auto=format&fit=crop" data-caption="Tokyo Atelier">Tokyo, JP</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="menu-preview" aria-hidden="true">
+          <div class="preview-frame">
+            <img id="menuPreviewImage" alt="Menu preview" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop" />
+          </div>
+          <p class="preview-caption" id="menuPreviewCaption">Main Canvas</p>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="hero-social-rail" aria-label="Social links">
+      <a class="hero-social-link" href="#" aria-label="Instagram">Instagram</a>
+      <a class="hero-social-link" href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a class="hero-social-link" href="#" aria-label="Behance">Behance</a>
+      <a class="hero-social-link" href="#" aria-label="Are.na">Are.na</a>
+    </aside>
+
+    <aside class="section-rail" aria-label="Section progress">
+      <a href="#top" data-rail-link>Intro</a>
+      <a href="#showcase" data-rail-link>Showcase</a>
+      <a href="#projects" data-rail-link>Pipeline</a>
+      <a href="#news" data-rail-link>Dispatch</a>
+      <a href="#testimonials" data-rail-link>Voices</a>
+      <a href="#collaborations" data-rail-link>Partners</a>
+      <a href="#faq" data-rail-link>FAQ</a>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero-stage" id="top">
+        <div class="container hero-sticky">
+          <article class="hero-panel hero-panel--landing">
+            <div class="hero-grid hero-grid--landing">
+              <div class="hero-landing-content">
+                <p class="eyebrow" data-reveal>Global Architecture Atelier | Berlin - Copenhagen - Tokyo</p>
+                <h1 class="hero-title hero-title--landing" data-wave>
+                  Concrete Silence,<br />
+                  <span class="serif no-break">Living Geometry</span>
+                </h1>
+                <span class="hero-title-line" aria-hidden="true"></span>
+                <p class="hero-copy hero-copy--landing" data-reveal>
+                  We design abstract, architecture-led environments where structure becomes atmosphere. Every
+                  wall, void, and threshold is treated as an emotional instrument.
+                </p>
+                <div class="hero-actions" data-reveal>
+                  <a class="button primary" href="#showcase">View Showcase</a>
+                  <a class="button" href="#projects">See New Projects</a>
+                </div>
+                <div class="hero-motion" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Studio manifesto">
+        <div class="marquee-track">
+          AXWELLS / ABSTRACT MATERIAL LANGUAGE / STRUCTURE AS SCULPTURE / VOID AS PROGRAM /
+          AXWELLS / ABSTRACT MATERIAL LANGUAGE / STRUCTURE AS SCULPTURE / VOID AS PROGRAM /
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>Studio Information</p>
+              <h2 class="section-title" data-wave>Measured Boldness, Human Scale</h2>
+            </div>
+            <p class="section-note" data-reveal>
+              Inspired by high-discipline architecture practices and modern interaction design playbooks, the
+              studio combines technical rigor with sensory clarity.
+            </p>
+          </div>
+          <div class="stats-asym">
+            <article class="metric metric-primary" data-reveal>
+              <p class="metric-label">Global Studio Impact</p>
+              <p
+                class="metric-value"
+                data-counter
+                data-counter-target="1.8"
+                data-counter-decimals="1"
+                data-counter-prefix=""
+                data-counter-suffix="M m²"
+              >
+                1.8M m²
+              </p>
+              <p class="section-note">Designed across research campuses, cultural districts, and mixed-use city fragments.</p>
+            </article>
+            <article class="metric metric-secondary" data-reveal>
+              <p
+                class="metric-value"
+                data-counter
+                data-counter-target="34"
+                data-counter-decimals="0"
+                data-counter-prefix=""
+                data-counter-suffix="%"
+              >
+                34%
+              </p>
+              <p class="metric-label">Average Carbon Reduction</p>
+            </article>
+            <article class="metric metric-secondary" data-reveal>
+              <p
+                class="metric-value"
+                data-counter
+                data-counter-target="27"
+                data-counter-decimals="0"
+                data-counter-prefix=""
+                data-counter-suffix=""
+              >
+                27
+              </p>
+              <p class="metric-label">International Mentions</p>
+            </article>
+            <article class="metric metric-bars" data-reveal>
+              <p class="metric-value">Program Mix</p>
+              <p class="metric-label">Current Portfolio Distribution</p>
+              <div class="bar-track">
+                <div class="bar-row"><span>Civic</span><div class="bar"><span data-bar-fill data-bar-target="78"></span></div><strong>78%</strong></div>
+                <div class="bar-row"><span>Mixed-use</span><div class="bar"><span data-bar-fill data-bar-target="64"></span></div><strong>64%</strong></div>
+                <div class="bar-row"><span>Residential</span><div class="bar"><span data-bar-fill data-bar-target="52"></span></div><strong>52%</strong></div>
+                <div class="bar-row"><span>Research</span><div class="bar"><span data-bar-fill data-bar-target="44"></span></div><strong>44%</strong></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="showcase">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>Showcase</p>
+              <h2 class="section-title" data-wave>Built Works & Spatial Prototypes</h2>
+            </div>
+            <p class="section-note" data-reveal>Selected built environments focused on depth, rhythm, and material reduction.</p>
+          </div>
+          <div class="showcase-grid">
+            <article class="card showcase-major" data-reveal>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Minimal monolith house" />
+              </div>
+              <div class="card-body">
+                <h3>Monolith Residence</h3>
+                <p>Berlin, DE | Brutalist shell with suspended cedar interiors and calibrated skylight axes.</p>
+              </div>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Museum atrium architecture" />
+              </div>
+              <div class="card-body">
+                <h3>Nordic Archive Pavilion</h3>
+                <p>Copenhagen, DK | Civic pavilion balancing acoustic silence and daylight choreography.</p>
+              </div>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+              <div class="card-media">
+                <img src="https://images.unsplash.com/photo-1753111842990-aa62da0535d5?q=80&w=1565&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Urban Japanese facade" />
+              </div>
+              <div class="card-body">
+                <h3>Shibuya Light Grid</h3>
+                <p>Tokyo, JP | Layered facade system tuned for density, speed, and soft nighttime glow.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>New Projects</p>
+              <h2 class="section-title" data-wave>Pipeline Focus 2026 - 2028</h2>
+            </div>
+            <p class="section-note" data-reveal>Scroll to move focus from first observatory to second and third in sequence.</p>
+          </div>
+        </div>
+        <div class="pipeline-track" id="pipelineTrack">
+          <div class="pipeline-sticky">
+            <div class="container pipeline-layout">
+              <aside class="pipeline-notes" aria-label="Pipeline sequence">
+                <p class="pipeline-label is-active" data-pipeline-label>
+                  First Observatory
+                  <strong>Tidal Observatory / Berlin</strong>
+                </p>
+                <p class="pipeline-label" data-pipeline-label>
+                  Second Observatory
+                  <strong>Transit Observatory / Copenhagen</strong>
+                </p>
+                <p class="pipeline-label" data-pipeline-label>
+                  Third Observatory
+                  <strong>Vertical Observatory / Tokyo</strong>
+                </p>
+              </aside>
+              <div class="pipeline-stage" aria-live="polite">
+                <article class="pipeline-slide" data-pipeline-item>
+                  <img src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tidal Observatory concept rendering" />
+                  <div class="pipeline-content">
+                    <h3>Tidal Observatory</h3>
+                    <p>
+                      Coastal civic instrument measuring climate data while operating as a public amphitheater.
+                    </p>
+                  </div>
+                </article>
+                <article class="pipeline-slide" data-pipeline-item>
+                  <img src="https://images.unsplash.com/photo-1489058535093-8f530d789c3b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Transit Observatory concept rendering" />
+                  <div class="pipeline-content">
+                    <h3>Transit Observatory</h3>
+                    <p>
+                      Infrastructure landmark merging mobility flows with climate-responsive sheltered micro-plazas.
+                    </p>
+                  </div>
+                </article>
+                <article class="pipeline-slide" data-pipeline-item>
+                  <img src="https://images.unsplash.com/photo-1523274158540-2aa98c15ec26?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vertical Observatory concept rendering" />
+                  <div class="pipeline-content">
+                    <h3>Vertical Observatory</h3>
+                    <p>
+                      Mixed-use high-rise with layered sky rooms, passive ventilation slots, and multi-level civic terraces.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>News</p>
+              <h2 class="section-title" data-wave>Studio Dispatch</h2>
+            </div>
+          </div>
+          <div class="news-grid">
+            <article class="news-card" data-reveal data-dispatch-card tabindex="0" role="button" aria-expanded="false" style="--dispatch-bg: url('https://images.unsplash.com/photo-1762344670775-443bf852f43d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+              <time datetime="2026-03-05">05 Mar 2026</time>
+              <h3>AXWELLS shortlisted for European Public Form Award.</h3>
+              <p>
+                Our Copenhagen Transit Courtyard proposal entered the final three in infrastructure design.
+                The jury highlighted its urban porosity strategy, where structural cores become daylight
+                chimneys and public terraces operate as year-round social rooms.
+              </p>
+              <div class="news-expand">
+                <p>The project was further praised for its passive climate shell, public sequencing, and low-maintenance structural rhythm across the courtyard edge.</p>
+              </div>
+              <span class="news-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="news-card" data-reveal data-dispatch-card tabindex="0" role="button" aria-expanded="false" style="--dispatch-bg: url('https://images.unsplash.com/photo-1695902285290-48adf05effe9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+              <time datetime="2026-02-17">17 Feb 2026</time>
+              <h3>Berlin studio launches low-carbon facade mock-up lab.</h3>
+              <p>A full-scale test line now measures thermal response of mineral-based cladding systems.</p>
+              <div class="news-expand">
+                <p>The lab also benchmarks weathering, reflectance, and structural fixing tolerances before mock-ups are cleared for site deployment.</p>
+              </div>
+              <span class="news-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="news-card" data-reveal data-dispatch-card tabindex="0" role="button" aria-expanded="false" style="--dispatch-bg: url('https://images.unsplash.com/photo-1739503336175-fff722232645?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+              <time datetime="2026-01-28">28 Jan 2026</time>
+              <h3>Tokyo office opens weekly public model critique evenings.</h3>
+              <p>Emerging architects and students are invited to review process boards and physical studies.</p>
+              <div class="news-expand">
+                <p>Selected review sessions now feed directly into the office's research archive, helping test urban micro-density concepts against real critique.</p>
+              </div>
+              <span class="news-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>Testimonials</p>
+              <h2 class="section-title" data-wave>What Partners Say</h2>
+            </div>
+          </div>
+          <div class="testimonial-grid">
+            <article class="quote" data-reveal>
+              <div class="quote-head">
+                <span class="quote-brand">UHG</span>
+                <img class="quote-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Portrait of Jonas Richter" />
+              </div>
+              <p>
+                "AXWELLS translated a difficult mixed-use brief into a clear geometric system that both investors and
+                residents immediately understood. The team gave our district a stronger identity without making it feel loud."
+              </p>
+              <footer>
+                <strong>Jonas Richter</strong>
+                <span>Development Director, Urban Habitat Group</span>
+              </footer>
+            </article>
+            <article class="quote" data-reveal>
+              <div class="quote-head">
+                <span class="quote-brand">NCB</span>
+                <img class="quote-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Portrait of Freja Madsen" />
+              </div>
+              <p>
+                "The AXWELLS team works like architects and choreographers at the same time. They balanced circulation,
+                daylight, and public emotion in a way that made the project feel precise, calm, and unmistakably civic."
+              </p>
+              <footer>
+                <strong>Freja Madsen</strong>
+                <span>Chair, Nordline Cultural Board</span>
+              </footer>
+            </article>
+            <article class="quote" data-reveal>
+              <div class="quote-head">
+                <span class="quote-brand">SRA</span>
+                <img class="quote-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop" alt="Portrait of Kenji Sato" />
+              </div>
+              <p>
+                "They delivered density without visual noise. The district now has identity, calmer pedestrian flow,
+                and stronger evening footfall. Their proposals felt simultaneously architectural, commercial, and public-minded."
+              </p>
+              <footer>
+                <strong>Kenji Sato</strong>
+                <span>Program Lead, Shibuya Regeneration Agency</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="collaborations">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>Brand Collaborations</p>
+              <h2 class="section-title" data-wave>Partnership</h2>
+            </div>
+          </div>
+          <div class="partner-grid">
+            <article class="partner-card static-card" data-reveal>
+              <div class="partner-trigger">
+                <div class="partner-mark">AE</div>
+                <div>
+                  <p class="partner-name">Aesop</p>
+                  <p class="partner-sector">Retail Atmosphere Systems</p>
+                </div>
+              </div>
+              <div class="partner-body">
+                <p>
+                  We co-developed sensory retail layouts where circulation, lighting gradients, and material touchpoints
+                  are orchestrated as one continuous architecture script. The result pairs ritualistic entry sequences,
+                  tactile product thresholds, and a more cinematic relation between display and shadow.
+                </p>
+                <div class="partner-tags">
+                  <span class="partner-tag"><strong>15</strong><small>Years</small></span>
+                  <span class="partner-tag"><strong>3M</strong><small>Revenue</small></span>
+                </div>
+              </div>
+            </article>
+            <article class="partner-card static-card" data-reveal>
+              <div class="partner-trigger">
+                <div class="partner-mark">VI</div>
+                <div>
+                  <p class="partner-name">Vitra</p>
+                  <p class="partner-sector">Workplace Spatial Research</p>
+                </div>
+              </div>
+              <div class="partner-body">
+                <p>
+                  Prototype workplace floors were tested with adaptable partitions and acoustic terraces to improve team
+                  focus without reducing social permeability. Our studies combined furniture micro-zones with architectural
+                  shell logic so teams could shift between concentration, review, and collective assembly without friction.
+                </p>
+                <div class="partner-tags">
+                  <span class="partner-tag"><strong>11</strong><small>Years</small></span>
+                  <span class="partner-tag"><strong>4.8M</strong><small>Revenue</small></span>
+                </div>
+              </div>
+            </article>
+            <article class="partner-card static-card" data-reveal>
+              <div class="partner-trigger">
+                <div class="partner-mark">B&amp;O</div>
+                <div>
+                  <p class="partner-name">Bang &amp; Olufsen</p>
+                  <p class="partner-sector">Audio-Responsive Interiors</p>
+                </div>
+              </div>
+              <div class="partner-body">
+                <p>
+                  Joint interior studies translated acoustic targets into geometry, integrating hidden resonance cavities
+                  and tactile sound diffusion surfaces. The collaboration shaped hospitality lounges and listening rooms
+                  where wall depth, ceiling rhythm, and object placement all contribute to the sound profile.
+                </p>
+                <div class="partner-tags">
+                  <span class="partner-tag"><strong>09</strong><small>Years</small></span>
+                  <span class="partner-tag"><strong>2.4M</strong><small>Revenue</small></span>
+                </div>
+              </div>
+            </article>
+            <article class="partner-card static-card" data-reveal>
+              <div class="partner-trigger">
+                <div class="partner-mark">CO</div>
+                <div>
+                  <p class="partner-name">Cosentino</p>
+                  <p class="partner-sector">Material Innovation</p>
+                </div>
+              </div>
+              <div class="partner-body">
+                <p>
+                  We tested engineered stone assemblies for high-traffic public zones, optimizing edge detailing and
+                  lifecycle durability while keeping a minimal visual expression. That work informed bench systems,
+                  stair transitions, and integrated reception volumes with stronger maintenance resilience.
+                </p>
+                <div class="partner-tags">
+                  <span class="partner-tag"><strong>13</strong><small>Years</small></span>
+                  <span class="partner-tag"><strong>3.6M</strong><small>Revenue</small></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-reveal>FAQ</p>
+              <h2 class="section-title" data-wave>Frequently Asked Questions</h2>
+            </div>
+          </div>
+          <div class="faq-wrap">
+            <article class="faq-item open" data-reveal>
+              <button class="faq-question">
+                <span>How early should we involve AXWELLS?</span>
+                <span class="symbol">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Ideally at concept stage. Early involvement lets us align architecture, engineering, and material strategy from day one.</p>
+              </div>
+            </article>
+            <article class="faq-item" data-reveal>
+              <button class="faq-question">
+                <span>Do you handle interior architecture as well?</span>
+                <span class="symbol">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. We design shell, circulation, and interior systems as one continuous language to avoid fragmented outcomes.</p>
+              </div>
+            </article>
+            <article class="faq-item" data-reveal>
+              <button class="faq-question">
+                <span>Can you collaborate with local architects of record?</span>
+                <span class="symbol">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely. Cross-office coordination is part of our workflow, especially for large public and mixed-use projects.</p>
+              </div>
+            </article>
+            <article class="faq-item" data-reveal>
+              <button class="faq-question">
+                <span>Is sustainability integrated or separate?</span>
+                <span class="symbol">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Integrated from the start. Carbon decisions are embedded in form, material selection, and envelope logic.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner" data-reveal>
+            <div class="cta-copy-block">
+              <h3 data-wave>Ready to build a bold spatial identity?</h3>
+              <p>
+                Share the city, scale, timeline, and ambition of your project. We respond with a first-fit direction,
+                office recommendation, and next-step workshop format.
+              </p>
+            </div>
+            <form class="contact-form" action="mailto:hello@axwells.studio" method="post" enctype="text/plain">
+              <div class="form-row">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="you@company.com" />
+                </label>
+              </div>
+              <div class="form-row">
+                <label>
+                  <span>Project Type</span>
+                  <input type="text" name="project-type" placeholder="Residential, civic, retail..." />
+                </label>
+                <label>
+                  <span>Location</span>
+                  <input type="text" name="location" placeholder="City / country" />
+                </label>
+              </div>
+              <label>
+                <span>Brief</span>
+                <textarea name="brief" rows="4" placeholder="Describe the project, timing, and desired outcome."></textarea>
+              </label>
+              <button class="button primary send-brief-btn" type="submit">
+                <span class="idle">SEND PROJECT BRIEF</span>
+                <span class="sending-state">SENDING ↗</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <section class="footer-block">
+            <h4>Studio</h4>
+            <p>AXWELLS is a global architecture atelier focused on abstract, materially-driven spaces.</p>
+          </section>
+          <section class="footer-block">
+            <h4>Offices</h4>
+            <ul>
+              <li><a href="berlin.html">Berlin, DE</a></li>
+              <li><a href="copenhagen.html">Copenhagen, DK</a></li>
+              <li><a href="tokyo.html">Tokyo, JP</a></li>
+            </ul>
+          </section>
+          <section class="footer-block">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#showcase">Showcase</a></li>
+              <li><a href="#projects">New Projects</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#collaborations">Collaborations</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </section>
+          <section class="footer-block">
+            <h4>Contact</h4>
+            <p>hello@axwells.studio</p>
+            <p>+45 33 45 87 10</p>
+            <p>Berlin / Copenhagen / Tokyo</p>
+          </section>
+          <section class="footer-block">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Architecture</a></li>
+              <li><a href="#">Interior Architecture</a></li>
+              <li><a href="#">Research & Strategy</a></li>
+              <li><a href="#">Material Development</a></li>
+            </ul>
+          </section>
+          <section class="footer-block">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#news">Studio Dispatch</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Project Archive</a></li>
+              <li><a href="#">Procurement Guide</a></li>
+            </ul>
+          </section>
+          <section class="footer-block">
+            <h4>Follow</h4>
+            <div class="social-row">
+              <a class="social-chip" href="#" aria-label="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a class="social-chip" href="#" aria-label="LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9V19" stroke="currentColor" stroke-width="1.7"/><path d="M6 6.5C6 6.22 6.22 6 6.5 6H6.51C6.79 6 7.01 6.22 7.01 6.5C7.01 6.78 6.79 7 6.51 7H6.5C6.22 7 6 6.78 6 6.5Z" fill="currentColor"/><path d="M11 19V12.5C11 10.84 12.34 9.5 14 9.5C15.66 9.5 17 10.84 17 12.5V19" stroke="currentColor" stroke-width="1.7"/></svg>
+              </a>
+              <a class="social-chip" href="#" aria-label="Behance">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 9.5H8.2C9.75 9.5 11 10.75 11 12.3C11 13.85 9.75 15.1 8.2 15.1H3V9.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M3 15.1H8.7C10.3 15.1 11.6 16.4 11.6 18C11.6 19.6 10.3 20.9 8.7 20.9H3V15.1Z" stroke="currentColor" stroke-width="1.7"/><path d="M14.4 14.4C14.4 12.52 15.92 11 17.8 11C19.68 11 21.2 12.52 21.2 14.4V15.2H14.4V14.4Z" stroke="currentColor" stroke-width="1.7"/><line x1="14.9" y1="8" x2="20.5" y2="8" stroke="currentColor" stroke-width="1.7"/></svg>
+              </a>
+            </div>
+            <p class="footer-note">Monthly field notes on architecture, materials, and cultural city shifts.</p>
+          </section>
+        </div>
+        <div class="footer-meta">
+          <span>AXWELLS Studio</span>
+          <span>Copyright <span data-year></span></span>
+          <span>Abstract Architecture Practice</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/lenis/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
